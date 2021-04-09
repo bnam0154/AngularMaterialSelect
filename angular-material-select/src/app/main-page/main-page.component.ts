@@ -37,7 +37,6 @@ export class MainPageComponent implements OnInit {
 
   localStorageLoad() {
     this.color.setValue(new Color(JSON.parse(localStorage.getItem("color"))));
-    console.log(this.color.value.name);
   }
 
   compareColors(p1: Color, p2: Color): boolean {
